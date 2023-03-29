@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('../font/BebasNeue-Regular.ttf');
+}
+
+#secondpage {
+  background: #da4453;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89216b, #da4453);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89216b, #da4453);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#thirdpage {
+  background: #667db6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient( to right, #667db6, #0082c8, #0082c8, #667db6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+#logo {
+  width: 75.8px;
+  height: 87.4px;
+  color: #ffffff;
+  animation: animate 1s linear forwards;
+}
+
+#heading-capage2 {
+  font-size: 5vw;
+  font-family: 'Poppins', sans serif;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15vh;
+  color: white;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animatehead {
+  0% {
+    opacity: 0;
+    transform: rotateY(10deg);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* #bodyPage {
+	color: white;
+	margin: 1%;
+} */
+
+#bodyPage-am {
+  padding-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding-left: 5vw;
+}
+
+#bodyPage-am>div {
+  /* flex: 1; */
+  flex: 10%;
+  margin: 3%;
+  font-size: 1.5vw;
+  animation: animatehead 1s linear forwards;
+  color: white;
+}
+
+#secondpage>p, #thirdpage>p {
+  margin-top: 3%;
+}
+
+.element {
+  text-align: center;
+  font-family: Poppins;
+}
+
+.hline-am {
+  font-size: 3vw;
+  color: white;
+  padding-top: 1vw;
+  font-family: 'BebasNeue-Regular';
+}
+
+@media screen and (max-width: 600px) {
+  #heading-capage2 {
+    font-size: 8vw;
+    padding-top: 10vh;
+  }
+  #bodyPage-am {
+    padding-top: 9vh;
+  }
+  #bodyPage-am>div {
+    flex: 50%;
+    font-size: 3.5vw;
+  }
+  .element {
+    padding-left: 6vw;
+    width: 80vw;
+  }
+  .hline-am {
+    font-size: 6vw;
+  }
+}
+
+/* .icons {
+    float: right;
+    width: 25px;
+    height: 25px;
+    ;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+.icons>img {
+    width: 25px;
+    height: 25px;
+} */
+
+/* @media(max-width: 1100px) {
+    #bodyPage-am {
+        flex: 50%;
+        max-width: 100%;
+        font-size: 4.5vw;
+    }
+
+
+
+    .heading-capage2 {
+        font-size: 7vw;
+        padding-top: 6vh;
+    }
+
+    .element {
+        font-size: 5vw;
+    }
+
+    .hline-am {
+        font-size: 7vw;
+        padding-top: 3vw;
+
+    }
+
+
+} */
+
+/* 
+@media(max-width: 768px) {
+	.hline {
+		font-size: 1.3em;
+	}
+
+	#bodypage {
+		display: list-item;
+	}
+
+
+	p {
+		font-size: 0.9em;
+	}
+} */

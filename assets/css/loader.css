@@ -1,0 +1,91 @@
+#loader {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    background-color: black;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+#loader img {
+    width: auto;
+    height: 100vh;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #loader img {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* .slideUp {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    min-height: 480px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    cursor: default;
+    pointer-events: none;
+} */
+
+/* 
+#pages {
+    float: down;
+    animation-duration: 2s;
+    animation-name: slideUp;
+}
+
+@keyframes slideUp {
+    from {
+        top: 100vh;
+    }
+    to {
+        top: 0;
+    }
+} */
+
+.loaded {
+    /* display: none; */
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+/* .slideUp {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+} */
